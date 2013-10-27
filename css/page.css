@@ -1,0 +1,178 @@
+*{
+    padding: 0;
+    margin:0;
+    font-family:"微软雅黑";
+}
+body{
+    margin: 0 auto;
+    width:960px;
+}
+.nav_one{
+    background-color: #f2f2f2;
+    position: relative; *+position: !important //修改了ie7下的一个浮动bug
+}
+
+.nav_drag li{
+    border: 1px gray solid;
+    text-align: center;
+    list-style: none;
+    background-color: #ebebeb;
+}
+
+.nav_drag ul{
+    visibility: hidden;
+    position: absolute;
+    left: -2px;
+    width: 147px;
+    top: 33px;
+}
+.nav_drag >a{
+    height: 140px;
+    display: block;
+    position: absolute;
+}
+.nav_one >li{
+    float: left;
+    margin-left: 10px;
+    font-size:18px;
+    border-right: 2px solid black;
+    padding: 0 35px;
+    margin:10px 0;
+    list-style: none;
+    position: relative;
+}
+.nav_one .special_one{
+    border-right: none;
+    width: 184px;
+    text-align: center;
+    margin-left: -37px;
+    position: relative;
+}
+.special_one ul{
+    position: absolute;
+    visibility: hidden;
+    top:32px;
+    left:35px;
+}
+.special_one >a{
+    height: 140px;
+    display: block;
+    position: absolute;
+    left: 60px;
+}
+.nav_one li:hover ul,/*非IE6*/
+.nav_one ul a:hover ul{/*IE6*/
+visibility:visible;
+    }
+
+.special_one li{
+    list-style: none;
+    text-align: center;
+    background-color: #ebebeb;
+    border: 1px solid #8b8b8b;
+    width:190px;
+}
+
+.clear{
+    clear:both;
+}
+.nav_two{
+    background-color: #4695b0;
+    padding:10px 0 10px 40px;
+}
+.nav_two span{
+    color: white;
+}
+.content{
+    overflow: hidden;
+}
+.nav_third{
+    float: left!important;
+    border: 1px gray solid;
+
+}
+.nav_third ul{
+    padding: 0;
+    margin:0;
+    list-style: none;
+}
+.content article{
+    float:right;
+    width: 826px;
+}
+article>h3{
+    margin:0 auto;
+    text-align: center;
+    padding:20px ;
+}
+article>p{
+    padding: 20px;
+}
+.nav_third li{
+text-align: left;
+padding:5px 30px;
+}
+address{
+    display: inline-block;
+    font-style: normal;
+    margin-top: 25px;
+}
+address span+span{
+border-left:solid 2px black;
+padding-left:5px;
+}
+footer{
+    position: relative;
+    text-align: center;
+    background-image: url("../images/footer.png");
+    height:300px;
+}
+footer>span{
+    position: absolute;
+    right:20px;
+    top:25px;
+}
+.nav_two a:link{
+    text-decoration: none;
+    color:white;
+}
+.nav_two a:visited{
+    text-decoration: none;
+    color:white;
+}
+.nav_one a:link,
+.nav_third a:link{
+text-decoration: none;
+color: black;
+}
+.nav_one a:visited,
+.nav_third a:visited{
+text-decoration: none;
+color: black;
+}
+address span+span a:link{
+     text-decoration: none;
+     color: black;
+}
+address span+span a:visited{
+    text-decoration: none;
+    color: black;
+}
+.bug_one{
+ width:72px;
+ height:24px;
+}
+#which_page {
+   color:red;
+}
+#which_year{
+    background-color: #4695b0;
+}
+
+#showImg{
+    margin-left: 200px;
+    width:500px;
+    height:500px;
+
+}
+article,aside,dialog,footer,header,section,footer,nav,figure,menu{display:block}

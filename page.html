@@ -1,0 +1,69 @@
+<!DOCTYPE>
+<html>
+    <head>
+        <meta charset="utf-8"></meta>
+        <link rel="stylesheet" type="text/css" href="css/page.css">
+             <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+       <script type="text/javascript">
+       window.onload=function(){
+            var photoGarelly = document.getElementById('photoG').getElementsByTagName("a");
+            var image = document.getElementById("showImg");
+            
+            for(var i = 0 ; i < photoGarelly.length ; i++)
+            {
+                 photoGarelly[i].onclick = function(){
+                    return function(){
+                        var href = this.getAttribute("href");
+                        image.setAttribute("src",href);
+                        return false;
+                    };
+                }(i);
+
+            }
+    }
+</script>
+    </head>
+    <body>
+        <header><img src="images/header.png"></header>
+        <nav>
+            <ul class="nav_one">
+                <li ><a href="" id="which_page">图片报导</a></li>
+                <li><a href="">媒体报导</a></li>
+                <li class="nav_drag">
+                    <a href="">历史回顾</a>
+                    <div class="bug_one"></div>
+                    <ul>
+                        <li><a href="">挑战杯简介</a></li>
+                        <li><a href="">挑战杯历届概况</a></li>
+                        <li><a href="">挑战杯历届回顾</a></li>
+                    </ul>
+                </li>
+                <li class="special_one">
+                    <a  href="">十三届国赛作品</a>
+                    <ul id="photoG">
+                        <li><a href="images/1.jpg">机械与控制类一</a></li>
+                        <li><a href="images/1.jpg">机械与控制类二</a></li>
+                        <li><a href="images/1.jpg">信息技术类一</a></li>
+                        <li><a href="images/1.jpg">信息技术类二</a></li>
+                        <li><a href="images/1.jpg">信息技术类三</a></li>
+                        <li><a href="images/1.jpg">管理类</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="clear"></div>
+        </nav>
+        <section class="nav_two">
+            <span>你现在的位置:&nbsp&nbsp</span><a href="#">历史回顾</a><span>>></span><span>挑战杯历届概况</span>
+        </section>
+        <section class="photo">
+            <img id="showImg" src="images/1.jpg">
+        </section>
+    <footer>
+        <address>
+            <span>这是页脚</span>
+            <span><a href="">关于我们</a></span>
+        </address>
+        <span>版权所有C2013广东工业大学</span>
+    </footer>
+    </body>
+</html>
