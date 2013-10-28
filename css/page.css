@@ -5,11 +5,12 @@
 #which_year{
     background-color: #4695b0;
 }
-
-#showImg{
-    margin-left: 200px;
-    width:500px;
+.photo{
+    text-align: center;
+     padding:20px 0;
+}
+#showImg{ 
+    width:760px;
     height:500px;
-
 }
 article,aside,dialog,footer,header,section,footer,nav,figure,menu{display:block}

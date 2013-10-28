@@ -38,12 +38,18 @@ padding:5px 30px;
 .photo li{
     list-style: none;
     float: left;
-    margin: 40px;
-
+    margin: 40px 76px;
+    width: 300px;
+    text-align: center;
 }
 .photo img{
-    width:350px;
-    height:350px;
+    width:300px;
+    height:150px;
     list-style: none;
+    margin-bottom: 5px;
+}
+.photo a:link,.photo a:visited{
+    text-decoration: none;
+    color: black;
 }
 article,aside,dialog,footer,header,section,footer,nav,figure,menu{display:block}

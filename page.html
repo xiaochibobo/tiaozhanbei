@@ -1,5 +1,9 @@
 <!DOCTYPE>
-<html>
+<!--[if IE 6]><html class="ie6 lte9 lte8 lte7 no-css3" lang="zh-cn"><![endif]-->
+<!--[if IE 7]><html class="ie7 lte9 lte8 lte7 no-css3" lang="zh-cn"><![endif]-->
+<!--[if IE 8]><html class="ie8 lte9 lte8 no-css3" lang="zh-cn"><![endif]-->
+<!--[if IE 9]><html class="ie9 lte9 no-css3" lang="zh-cn"><![endif]-->
+<!--[if !(IE 6) | !(IE 7) | !(IE 8) | !(IE 9)  ]><!--><html lang="zh-cn" class='non-ie'><!--<![endif]-->
     <head>
         <meta charset="utf-8"></meta>
         <link rel="stylesheet" type="text/css" href="css/page.css">
@@ -26,12 +30,12 @@
     </head>
     <body>
         <header><img src="images/header.png"></header>
-        <nav>
+       <nav class="ini">
             <ul class="nav_one">
-                <li ><a href="">图片报导</a></li>
-                <li><a href="">媒体报导</a></li>
+                <li ><a href="index.html">图片报导</a></li>
+                <li><a href="report-list.html">媒体报导</a></li>
                 <li class="nav_drag" >
-                   <a href="" id="which_page"> 历史回顾</a>
+                   <a href="history.html" > 历史回顾</a>
                     <ul>
                         <li><a href="">挑战杯简介</a></li>
                         <li><a href="">挑战杯历届概况</a></li>
@@ -40,7 +44,7 @@
                   
                 </li>
                 <li class="special_one">
-                   <a href="">十三届国赛作品</a>
+                   <a href="page.html" id="which_page">十三届国赛作品</a>
                     <ul>
                         <li><a href="">机械与控制类一</a></li>
                         <li><a href="">机械与控制类二</a></li>
@@ -55,7 +59,7 @@
             <div class="clear"></div>
         </nav>
         <section class="nav_two">
-            <span>你现在的位置:&nbsp&nbsp</span><a href="#">历史回顾</a><span>>></span><span>挑战杯历届概况</span>
+            <span>你现在的位置:</span><a href="#">历史回顾</a><span>&lt;&lt;</span><span>挑战杯历届概况</span>
         </section>
         <section class="photo">
             <img id="showImg" src="images/1.jpg">
